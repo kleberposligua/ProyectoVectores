@@ -15,7 +15,7 @@ namespace ProyectoVectores.clases
         private static string[] decenas = new string[] {"","diez","veinte","treinta","cuarenta",
         "cincuenta","sesenta","setenta","ochenta","noventa"};
 
-        private static string[] centenas = new string[] {"","cien","doscientos","trescientos",
+        private static string[] centenas = new string[] {"","ciento","doscientos","trescientos",
         "cuatrocientos","quinientos","seiscientos","setecientos","ochocientos",
         "novecientos"};
 
@@ -49,6 +49,8 @@ namespace ProyectoVectores.clases
                 aux = getUnidades(num);
             else if (num < 100)
                 aux = getDecenas(num);
+            else if(num==100)
+                aux = "cien";
             else if (num < 1000)
             {
                 aux = centenas[num / 100];
