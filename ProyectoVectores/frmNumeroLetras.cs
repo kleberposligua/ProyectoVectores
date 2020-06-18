@@ -23,7 +23,8 @@ namespace ProyectoVectores
             {
                 if (int.TryParse(this.txtNumero.Text, out int num))
                 {
-                    this.txtResultado.Text = clases.NumLetras.getLetras(num);
+                    String x = clases.NumLetras.NumeroaLetras(num);
+                    this.txtResultado.Text = x + "-->" + num.ToString();
                     this.txtNumero.Text = "";
                 }
             }
